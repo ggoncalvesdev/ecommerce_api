@@ -1,4 +1,4 @@
-package br.org.serratec.backend.ecommerce.service.mapper;
+/* package br.org.serratec.backend.ecommerce.service.mapper;
 
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
@@ -12,3 +12,4 @@ public interface EnderecoMapper {
     EnderecoDTO toDTO(Endereco endereco);
     Endereco toEntity(EnderecoDTO enderecoDTO);
 }
+ */

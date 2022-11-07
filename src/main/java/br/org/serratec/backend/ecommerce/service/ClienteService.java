@@ -38,7 +38,7 @@ public class ClienteService {
 	@Transactional
 	public ClienteDTO inserir(ClienteDTO clienteDTO) {
 		Cliente cliente = clienteMapper.toEntity(clienteDTO);
-		cliente.getEndereco().setCliente(cliente);
+		//cliente.getEndereco().setCliente(cliente);
 		Cliente clienteSalvoNoBd = clienteRepository.save(cliente);
 		return clienteMapper.toDTO(clienteSalvoNoBd);
 	
@@ -74,29 +74,29 @@ public class ClienteService {
 		if(clienteDTO.getDataNascimento() != null) {
 			clienteNoBanco.setDataNascimento(clienteDTO.getDataNascimento());
 		}
-		if (clienteDTO.getEndereco()!=null){
-			if (clienteDTO.getEndereco().getRua()!=null) {
-				clienteNoBanco.getEndereco().setRua(clienteDTO.getEndereco().getRua());
-			}
-			if (clienteDTO.getEndereco().getNumero()!=null) {
-				clienteNoBanco.getEndereco().setNumero(clienteDTO.getEndereco().getNumero());
-			}
-			if (clienteDTO.getEndereco().getComplemento()!=null) {
-				clienteNoBanco.getEndereco().setComplemento(clienteDTO.getEndereco().getComplemento());
-			}
-			if (clienteDTO.getEndereco().getBairro()!=null) {
-				clienteNoBanco.getEndereco().setBairro(clienteDTO.getEndereco().getBairro());
-			}
-			if (clienteDTO.getEndereco().getCidade()!=null) {
-				clienteNoBanco.getEndereco().setCidade(clienteDTO.getEndereco().getCidade());
-			}
-			if (clienteDTO.getEndereco().getCep()!=null) {
-				clienteNoBanco.getEndereco().setCep(clienteDTO.getEndereco().getCep());
-			}
-			if (clienteDTO.getEndereco().getEstado()!=null) {
-				clienteNoBanco.getEndereco().setEstado(clienteDTO.getEndereco().getEstado());
-			}
-		}
+		//if (clienteDTO.getEndereco()!=null){
+			//if (clienteDTO.getEndereco().getRua()!=null) {
+			//	clienteNoBanco.getEndereco().setRua(clienteDTO.getEndereco().getRua());
+			//}
+			//if (clienteDTO.getEndereco().getNumero()!=null) {
+				//clienteNoBanco.getEndereco().setNumero(clienteDTO.getEndereco().getNumero());
+			//}
+			//if (clienteDTO.getEndereco().getComplemento()!=null) {
+				//clienteNoBanco.getEndereco().setComplemento(clienteDTO.getEndereco().getComplemento());
+			//}
+			//if (clienteDTO.getEndereco().getBairro()!=null) {
+				//clienteNoBanco.getEndereco().setBairro(clienteDTO.getEndereco().getBairro());
+			//}
+			//if (clienteDTO.getEndereco().getCidade()!=null) {
+				//clienteNoBanco.getEndereco().setCidade(clienteDTO.getEndereco().getCidade());
+			//}
+			//if (clienteDTO.getEndereco().getCep()!=null) {
+				//clienteNoBanco.getEndereco().setCep(clienteDTO.getEndereco().getCep());
+			//}
+			//if (clienteDTO.getEndereco().getEstado()!=null) {
+				//clienteNoBanco.getEndereco().setEstado(clienteDTO.getEndereco().getEstado());
+		//	}
+		//}
 		return clienteMapper.toDTO(clienteRepository.save(clienteNoBanco));
 	}
 	

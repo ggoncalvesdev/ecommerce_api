@@ -8,19 +8,19 @@ insert into funcionario (id, cpf, nome) values
    (2, '17602085078', 'Maria José'),
    (3, '99124915050', 'Joaquim Manoel');
    
-insert into cliente(id, cpf, senha, nome, email, data_nascimento, login) values
-   (1, '65782885033', 123, 'Jose das Coves',    'jose.coves@email.com',     '1992-02-01', 'josecoves'),
-   (2, '69191608031', 456, 'Maria das Coves',   'maria.coves@email.com',    '1993-04-06', 'maria'),
-   (3, '64294714034', 789, 'Claudio Jose',      'claudio.jose@email.com',   '1991-08-13', 'claudio'),
-   (4, '64294714034', 321, 'Daniele Aparecida', 'dani.aparecida@email.com', '2002-03-21', 'dani'),
-   (5, '56943214055', 654, 'Cleberson Carlos',  'kleb1990@email.com',       '2001-07-11', 'clebinho');
+ insert into cliente(id, cpf, senha, nome, email, data_nascimento, login) values
+    (1, '65782885033', 123, 'Jose das Coves',    'jose.coves@email.com',     '1992-02-01', 'josecoves');
+--    (2, '56943214055', 654, 'Cleberson Carlos',  'kleb.coves@email.com',       '2001-07-11', 'clebinho'),
+--    (3, '64294714035', 789, 'Claudio Jose',      'claudio.jose@email.com',   '1991-08-13', 'claudio'),
+--    (4, '69191608031', 456, 'Maria das Coves',   'maria.coves@email.com',    '1993-04-06', 'maria'),
+--    (5, '64294714034', 321, 'Daniele Aparecida', 'dani.aparecida@email.com', '2002-03-21', 'dani');
    
-insert into endereco (id, id_cliente, logradouro, numero, complemento, bairro, cidade, cep, uf) values
-   (1, 1, 'Rua dos Bobos', '0',  '',        'Castanheira', 'Metropolis',      '23451234', 'SP'),
-   (2, 2, 'Rua dos Bobos', '0',  '',        'Castanheira', 'Metropolis',      '23451234', 'SP'),
-   (3, 3, 'Estrada Torta', '45', 'Bloco 2', 'Castanheira', 'Aroeira',         '25839248', 'MG'),
-   (4, 4, 'Estrada Reta',  '19', 'Casa 2',  'Sinistro',    'Tangamandapio',   '45627894', 'MG'),
-   (5, 5, 'Rua das Ruas',  '99', '',        'Distrito 1',  'Cidade-Alerta',   '52742264', 'AL');
+-- insert into endereco (id, id_cliente, logradouro, numero, complemento, bairro, cidade, cep, uf) values
+--    (1, 1, 'Rua dos Bobos', '0',  '',        'Castanheira', 'Metropolis',      '23451234', 'SP'),
+--    (2, 2, 'Rua dos Bobos', '0',  '',        'Castanheira', 'Metropolis',      '23451234', 'SP'),
+--    (3, 3, 'Estrada Torta', '45', 'Bloco 2', 'Castanheira', 'Aroeira',         '25839248', 'MG'),
+--    (4, 4, 'Estrada Reta',  '19', 'Casa 2',  'Sinistro',    'Tangamandapio',   '45627894', 'MG'),
+--    (5, 5, 'Rua das Ruas',  '99', '',        'Distrito 1',  'Cidade-Alerta',   '52742264', 'AL');
    
 insert into foto (id, nome, mimetype, data) values
    (1, 'cadeira.jpg',            'image/jpeg', FILE_READ('classpath:fotos/cadeira.jpg')),

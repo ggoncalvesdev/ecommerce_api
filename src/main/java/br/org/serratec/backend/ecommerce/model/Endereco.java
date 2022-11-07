@@ -1,4 +1,4 @@
-package br.org.serratec.backend.ecommerce.model;
+/* package br.org.serratec.backend.ecommerce.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -62,4 +62,4 @@ public class Endereco {
 	@NotNull
 	@Column(name = "cep", nullable = false, length = 40)
 	private String cep;
-}
+} */
