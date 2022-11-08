@@ -30,7 +30,6 @@ public class ClienteDTO {
 
   @NotNull
   @Size(min = 5, max = 60)
-  @Size(max = 15)
   private String senha;
 
   @NotNull
